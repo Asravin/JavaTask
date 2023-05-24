@@ -14,6 +14,7 @@ public class Task3 {
                 NewCount = 0;
             }
         }
+        
         if(count < NewCount) {
             System.out.println("Подряд идущих 1: " +NewCount);
         }
