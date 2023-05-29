@@ -2,7 +2,7 @@ package HomeWork.Work2;
 
 public class Task1 {
     public static  void main(String[] args) throws Exception {
-        String [] list = selectLine.selectFromFile("students.txt");
+        String [] list = selectLine.selectFromFile("/JavaLesson/HomeWork/Work2/students.txt");
         System.out.println(list[0]);
         StringBuilder stringBuilder = outList(list[0]);
         System.out.println(stringBuilder);
