@@ -8,6 +8,7 @@ public class Task2 {
     private static List<String> planets = new ArrayList<>();
     public static void main(String[] args) {
         printPlanets();
+        removeEqualElements(planets);
     }
     private static void fillPlanets() {
         planets.add("Меркурий");
@@ -38,5 +39,16 @@ public class Task2 {
             }
             System.out.println(sb);
         }
+    }
+    private static void removeEqualElements(List<String> elements) {
+        fillPlanets();
+        elements.sort(String::compareTo);
+        for(int i = 1; i < elements.size(); i++) {
+            if(elements.get(i).equals(elements.get(i - 1))) {
+                elements.remove(elements.get(i));
+            }
+        System.out.println(elements);
+        }
+        
     }
 }
